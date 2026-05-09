@@ -1,0 +1,36 @@
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* header arriba, main ocupa el centro, footer abajo */
+  min-height: 100vh; /* que ocupe toda la altura de la ventana */
+  margin: 0; /* quitar márgenes por defecto */
+}
+
+/* Navegación con Flexbox */
+nav {
+  display: flex; /* activa flexbox */
+  justify-content: space-around; /* reparte los enlaces */
+  background-color: #333;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffcc00; /* efecto al pasar el mouse */
+}
+
+/* Header, Main y Footer */
+header, footer {
+  background-color: #444;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+main {
+  padding: 20px;
+}
