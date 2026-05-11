@@ -9,6 +9,7 @@ body {
   color: #333;
 }
 
+/* Header */
 header {
   text-align: center;
   background-color: #004080;
@@ -39,38 +40,72 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
 nav a:hover {
-  color: #ffcc00;
-  text-decoration: underline;
+  background-color: #ffcc00;
+  color: #004080;
 }
 
+/* Main Layout */
 main {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 2rem auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  align-items: start;
 }
 
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+/* Cards */
 .card {
   background: white;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-top: 6px solid #004080;
+}
+
+.card h2 {
+  background-color: #004080;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 6px 6px 0 0;
+  margin-top: 0;
   text-align: center;
 }
 
 .card img {
   max-width: 100%;
   border-radius: 6px;
+  margin-top: 1rem;
 }
 
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Footer */
 footer {
   text-align: center;
   background-color: #004080;
   color: white;
   padding: 1rem;
-  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+footer p:first-child {
+  margin-bottom: 0.3rem;
 }
