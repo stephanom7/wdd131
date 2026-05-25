@@ -7,7 +7,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: white;
 }
 
 header {
@@ -23,9 +23,8 @@ header h1 {
 
 picture img {
     width: 100%;
+    height: auto;
     display: block;
-    max-height: 500px;
-    object-fit: cover;
 }
 
 section {
